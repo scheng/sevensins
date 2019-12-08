@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: job4
-Implementation-Version: 1.0
-Specification-Vendor: examplemodsareus
-Specification-Title: blockproj
-Implementation-Timestamp: 2019-12-06T00:26:17-0500
-Specification-Version: 1
-Implementation-Vendor: examplemodsareus
-
