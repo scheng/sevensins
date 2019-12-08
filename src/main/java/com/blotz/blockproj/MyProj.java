@@ -4,10 +4,7 @@ import com.blotz.blockproj.blocks.*;
 import com.blotz.blockproj.setup.ClientProxy;
 import com.blotz.blockproj.setup.IProxy;
 import com.blotz.blockproj.setup.ServerProxy;
-import com.blotz.blockproj.sevensins.envy;
-import com.blotz.blockproj.sevensins.gluttony;
-import com.blotz.blockproj.sevensins.greed;
-import com.blotz.blockproj.sevensins.lust;
+import com.blotz.blockproj.sevensins.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -39,6 +36,7 @@ public class MyProj
         MinecraftForge.EVENT_BUS.register(new envy());
         MinecraftForge.EVENT_BUS.register(new lust());
         MinecraftForge.EVENT_BUS.register(new gluttony());
+        MinecraftForge.EVENT_BUS.register(new pride());
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
