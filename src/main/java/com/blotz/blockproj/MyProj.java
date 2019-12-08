@@ -39,21 +39,15 @@ public class MyProj
         MinecraftForge.EVENT_BUS.register(new pride());
     }
 
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().register(new block1());
-            // register a new block here
-            LOGGER.info("HELLO from Register Block");
         }
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             event.getRegistry().register(new BlockItem(ModBlocks.BLOCK1, new Item.Properties()).setRegistryName("block1"));
-            // register a new block here
-            LOGGER.info("HELLO from Register Item");
         }
     }
 }
